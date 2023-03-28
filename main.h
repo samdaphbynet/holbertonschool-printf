@@ -32,8 +32,8 @@ typedef struct print
  */
 
 int _printf(const char *format, ...);
-int print_char(char chara);
-int print_string(char string);
-int print_pc(char pc);
+int print_char(va_list args);
+int print_string(va_list args);
+int print_pc(va_list args);
 
 #endif
