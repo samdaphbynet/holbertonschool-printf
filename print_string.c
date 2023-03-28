@@ -8,15 +8,14 @@
 
 int print_string(va_list args)
 {
-	char *str;
-	int string = 0;
+	const char *str;
 
-	str = (char)va_arg(args, char *);
+	str = va_arg(args, char *);
 
-	if (str)
+	while (*str)
 	{
-		string = write(1, &str, 1)
-		return string;
+		putchar(*str);
+		str++;
 	}
 	return (0);
 }
