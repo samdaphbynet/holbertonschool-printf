@@ -1,9 +1,8 @@
 #include "main.h"
 
-/**
- *
- *
- *
+/* _printf - print the function like the normal print
+ * @format: input the format
+ * Return: printed chars
  */
 
 int _printf(const char *format, ...)
