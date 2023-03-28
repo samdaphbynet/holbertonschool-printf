@@ -1,10 +1,7 @@
 #ifndef PRINTF_H
 #define PRINTF_H
 
-/**
- *
- *
- */
+/*FLAGS OF FUNCTIONS */
 
 #include <limits.h>
 #include <stdio.h>
@@ -14,9 +11,9 @@
 #include <unistd.h>
 
 /**
- *
- *
- *
+ * typedef struct - struct function
+ * @sp: the format.
+ * @f: the function asscociated.
  */
 
 typedef struct print
@@ -25,11 +22,8 @@ typedef struct print
 	int (*f)(va_list);
 } print_t;
 
-/**
- *
- *
- *
- */
+/*****FUNCTIONS****/
+/* Function to print chars and strings*/
 
 int _printf(const char *format, ...);
 int print_char(va_list args);
