@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ * specifiers - print an arguement
+ * @format: formated string in which to print the argument
+ * Return: NULL
  */
 
 int (*specifiers(const char *format))(va_list)
