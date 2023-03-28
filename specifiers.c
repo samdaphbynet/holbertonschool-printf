@@ -6,12 +6,14 @@
  *
  */
 
-int (*specifiers(const char *format)(va_list))
+int (*specifiers(const char *format))(va_list)
 {
-	print_t array[4] =
+	int i = 0;
+	print_t array[5] =
 	{
 		{"c", print_char},
 		{"s", print_string},
+		{"r", print_r},
 		{"%", print_pc},
 		{NULL, NULL}
 	};
