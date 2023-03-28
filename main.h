@@ -26,7 +26,10 @@ typedef struct print
 /* Function to print chars and strings*/
 
 int _printf(const char *format, ...);
+int (*specifiers(const char *format))(va_list);
+
 int print_char(va_list args);
+int print_r(va_list args);
 int print_string(va_list args);
 int print_pc(va_list args);
 
