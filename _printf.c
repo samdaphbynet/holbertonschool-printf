@@ -8,12 +8,13 @@
 
 int _printf(const char *format, ...)
 {
-	va_list args;
-	va_start(args, format);
 	int count = 0;
 	int value = 0;
 	int i = 0;
 	int (*f)(va_list);
+
+	va_list args;
+	va_start(args, format);
 
 	if (&format[i] == NULL)
 	{

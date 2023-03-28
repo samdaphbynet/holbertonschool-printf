@@ -7,6 +7,15 @@
 
 int print_r(va_list args)
 {
-	putchar('r');
-	return 0;
+	int i, size;
+	const char *str;
+
+	str = va_arg(args, const char *);
+
+	size = strlen(str);
+
+	for (i = size - 1; i >= 0; i--)
+		putchar(str[i]);
+
+	return (size);
 }

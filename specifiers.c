@@ -12,13 +12,13 @@ int (*specifiers(const char *format))(va_list)
 	print_t array[5] =
 	{
 		{"c", print_char},
+		{"d", print_lenght},
 		{"s", print_string},
 		{"r", print_r},
-		{"%", print_pc},
 		{NULL, NULL}
 	};
 
-	for (i = 0; array[i].sp != NULL; i++);
+	for (i = 0; array[i].sp != NULL; i++)
 	{
 		if (*(array[i].sp) == *format)
 		{
