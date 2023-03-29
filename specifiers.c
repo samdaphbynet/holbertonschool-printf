@@ -9,12 +9,12 @@
 int (*specifiers(const char *format))(va_list)
 {
 	int i = 0;
-	print_t array[5] =
+	print_t array[] =
 	{
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_pc},
-		{NULL, NULL}
+		{'\0', NULL}
 	};
 
 	for (i = 0; array[i].sp != NULL; i++)

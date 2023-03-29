@@ -8,19 +8,11 @@
 
 int print_string(va_list args)
 {
-	const char *str;
+	char *str;
 
 	str = va_arg(args, char *);
 
 	if (str == NULL)
-	{
 		return (-1);
-	}
-
-	while (*str)
-	{
-		putchar(*str);
-		str++;
-	}
-	return (0);
+	return (write(1, str, strlen(str)));
 }
