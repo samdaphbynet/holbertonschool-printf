@@ -11,11 +11,10 @@
 #include <unistd.h>
 
 /**
- * typedef struct - struct function
+ * struct print - struct print_t
  * @sp: the format.
  * @f: the function asscociated.
  */
-
 typedef struct print
 {
 	char *sp;
