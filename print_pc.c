@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- *
- *
+ * print_pc - print the function
+ * @args: input
+ * Return: %
  */
 
 int print_pc(va_list args)
