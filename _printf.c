@@ -1,23 +1,20 @@
 #include "main.h"
 
 /**
- * _printf - print the function like the normal print
+ * _printf - Write the function
  * @format: input the format
  * Return: printed chars
  */
 int _printf(const char *format, ...)
 {
-	int count = 0;
-	int value = 0;
-	int i = 0;
+	int count = 0, value = 0, i = 0;
 	int (*f)(va_list);
-
 	va_list args;
+
 	va_start(args, format);
 
 	if (&format[i] == NULL)
 		return (-1);
-
 	while (format && format[i])
 	{
 		if (format[i] != '%')
@@ -27,12 +24,8 @@ int _printf(const char *format, ...)
 			i++;
 			continue;
 		}
-
 		if (format[i] == '%')
-		{
 			f = specifiers(&format[i + 1]);
-		}
-
 		if (f)
 		{
 			value = f(args);
@@ -40,12 +33,8 @@ int _printf(const char *format, ...)
 			i = i + 2;
 			continue;
 		}
-
 		if (format[i + 1] == '\0')
-		{
 			break;
-		}
-
 		if (format[i + 1] != '\0')
 		{
 			value = write(1, &format[i], 1);
