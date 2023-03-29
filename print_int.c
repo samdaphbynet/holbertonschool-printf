@@ -4,6 +4,7 @@
  *
  *
  */
+
 void print(int n)
 {
 	if (n < 0)
@@ -15,15 +16,18 @@ void print(int n)
 		print(n / 10);
 	putchar((n % 10) + '0');
 }
+
 /**
  *
  *
  */
 
-
 int print_int(va_list args)
 {
-	printf("#");
-	(void)args;
-	return 0;
+	int num;
+
+	num = va_arg(args, int);
+	print(num);
+
+	return (0);
 }
