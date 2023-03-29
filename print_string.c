@@ -9,10 +9,11 @@
 int print_string(va_list args)
 {
 	char *str;
+	char *oct = "null";
 
 	str = va_arg(args, char *);
 
 	if (str == NULL)
-		return (-1);
+		return (write(1, oct, strlen(oct)));
 	return (write(1, str, strlen(str)));
 }

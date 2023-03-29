@@ -14,7 +14,7 @@ int (*specifiers(const char *format))(va_list)
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_pc},
-		{'\0', NULL}
+		{NULL, NULL}
 	};
 
 	for (i = 0; array[i].sp != NULL; i++)
