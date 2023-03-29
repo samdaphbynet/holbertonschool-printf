@@ -13,10 +13,6 @@ int print_char(va_list args)
 
 	c = (char)va_arg(args, int);
 
-	if (c)
-	{
-		count = write(1, &c, 1);
-		return (count);
-	}
-	return (0);
+	count = write(1, &c, 1);
+	return (count);
 }
