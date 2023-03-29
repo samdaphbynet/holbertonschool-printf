@@ -9,7 +9,7 @@
 int print_string(va_list args)
 {
 	char *str;
-	char *oct = "null";
+	char *oct = "(null)";
 
 	str = va_arg(args, char *);
 
