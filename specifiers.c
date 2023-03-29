@@ -12,6 +12,8 @@ int (*specifiers(const char *format))(va_list)
 	print_t array[] = {
 		{"c", print_char},
 		{"s", print_string},
+		{"d", print_int},
+		{"i", print_int},
 		{"%", print_pc},
 		{'\0', NULL}
 	};

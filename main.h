@@ -31,4 +31,7 @@ int print_char(va_list args);
 int print_pc(va_list args);
 int print_string(va_list args);
 
+void print(int n);
+int print_int(va_list args);
+
 #endif
