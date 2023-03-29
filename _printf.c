@@ -1,10 +1,10 @@
 #include "main.h"
 
-/* _printf - print the function like the normal print
+/**
+ * _printf - print the function like the normal print
  * @format: input the format
  * Return: printed chars
  */
-
 int _printf(const char *format, ...)
 {
 	int count = 0;
@@ -15,10 +15,10 @@ int _printf(const char *format, ...)
 	va_list args;
 	va_start(args, format);
 
-	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+	if (&format[i] == NULL)
 		return (-1);
 
-	while (format[i])
+	while (format && format[i])
 	{
 		if (format[i] != '%')
 		{
@@ -55,5 +55,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(args);
-	return count;
+	return (count);
 }
