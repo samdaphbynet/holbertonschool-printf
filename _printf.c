@@ -15,10 +15,8 @@ int _printf(const char *format, ...)
 	va_list args;
 	va_start(args, format);
 
-	if (!format)
-	{
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
-	}
 
 	while (format[i])
 	{
@@ -35,7 +33,7 @@ int _printf(const char *format, ...)
 			f = specifiers(&format[i + 1]);
 		}
 
-		if (f != NULL)
+		if (f)
 		{
 			value = f(args);
 			count = count + value;
@@ -52,7 +50,7 @@ int _printf(const char *format, ...)
 		{
 			value = write(1, &format[i], 1);
 			count = count + value;
-			i = i + 2;
+			i = i + 1;
 			continue;
 		}
 	}
