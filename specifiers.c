@@ -9,8 +9,7 @@
 int (*specifiers(const char *format))(va_list)
 {
 	int i = 0;
-	print_t array[] =
-	{
+	print_t array[] = {
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_pc},
