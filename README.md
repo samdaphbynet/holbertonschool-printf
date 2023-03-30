@@ -2,6 +2,8 @@
 
 ## Description
 
+This project contains a custom implementation of the `printf` function in C, named `_printf`. It allows printing formatted output to the console.
+
 ### FORMAT OF THE FORMAT STRING
 The format string is a character string that starts and ends in its initial shift state, if any. It consists of zero or more directives: ordinary characters (not %), which are copied unchanged to the output stream; and conversion specifications, which result in fetching zero or more subsequent arguments.
 
@@ -31,6 +33,7 @@ Upon successful return, these functions return the number of characters printed 
        output to strings).
 
 ## EXAMPLE
+![nom de l'image]([chemin/vers/l'image](https://public.iutenligne.net/informatique/algorithme-et-programmation/priou/LangageC/Codesformat.png))
 
 #include "main.h"
 _printf("Length:[%d, %i]\n", 50, 40); // Output: Length:[50, 40].
