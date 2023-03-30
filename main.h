@@ -22,18 +22,13 @@ typedef struct print
 } print_t;
 
 /*****FUNCTIONS****/
-/* Function to print chars and strings*/
+/* The prototype for all functions */
 
 int _printf(const char *format, ...);
 int (*specifiers(const char *format))(va_list);
-
 int print_char(va_list args);
 int print_pc(va_list args);
 int print_string(va_list args);
-
-int print_int(va_list args);
-char *str_rev(char *str);
-
 int print_int(va_list args);
 
 #endif
