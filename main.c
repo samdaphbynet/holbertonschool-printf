@@ -12,8 +12,8 @@ int main(void)
 {
 	int len, len2;
 
-	len = _printf("%d\n", -1024);
-	len2 = printf("%d\n", -1024);
+	len = _printf("%d", 1024);
+	len2 = printf("%d", 1024);
 
 	printf("my_PRINTF : %d\n", len);
 	printf("printf : %d\n", len2);
