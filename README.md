@@ -33,7 +33,7 @@ Upon successful return, these functions return the number of characters printed 
        output to strings).
 
 ## EXAMPLE
-![nom de l'image]([chemin/vers/l'image](https://public.iutenligne.net/informatique/algorithme-et-programmation/priou/LangageC/Codesformat.png))
+![nom de l'image](https://public.iutenligne.net/informatique/algorithme-et-programmation/priou/LangageC/Codesformat.png)
 
 #include "main.h"
 _printf("Length:[%d, %i]\n", 50, 40); // Output: Length:[50, 40].
