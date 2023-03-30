@@ -12,16 +12,18 @@ int print_int(va_list args)
 	char buffer[100];
 
 	if (num < 0)
-	{
-		putchar('-');
-		num = -num;
-	}
-	do
+        {
+                putchar('-');
+                num = -num;
+		count++;
+        }
+
+	while (num > 0)
 	{
 		buffer[len] = (num % 10) + '0';
 		num /= 10;
 		len++;
-	} while (num > 0);
+	}
 	if (len == 0)
 	{
 		buffer[len] = '0';
@@ -30,8 +32,8 @@ int print_int(va_list args)
 
 	buffer[len] = '\0';
 	str_rev(buffer);
-	fputs(buffer, stdout);
-	count += len + '\0';
+	write(1, buffer, strlen(buffer));	
+	count += len;
 
 	return (count);
 }
