@@ -33,5 +33,6 @@ int print_string(va_list args);
 
 void print(int n);
 int print_int(va_list args);
+char *str_rev(char *str);
 
 #endif

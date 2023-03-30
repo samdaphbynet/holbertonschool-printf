@@ -5,29 +5,36 @@
  *
  */
 
-void print(int n)
-{
-	if (n < 0)
-	{
-		putchar('-');
-		n = -n;
-	}
-	if (n > 10)
-		print(n / 10);
-	putchar((n % 10) + '0');
-}
-
-/**
- *
- *
- */
-
 int print_int(va_list args)
 {
-	int num;
+	int num = va_arg(args, int);
+	int len = 0, count = 0;
+	char buffer[30];
 
-	num = va_arg(args, int);
-	print(num);
+	if (num < 0)
+	{
+		putchar('-');
+		num = -num;
+	}
+	while (num > 10)
+	{
+		buffer[len] = (num % 10) + '0';
+		num /= 10;
+		len++;
+	}
+	if (len == 0)
+	{
+		buffer[len] = '0';
+		len++;
+	}
 
-	return (0);
+	buffer[len] = '\0';
+	putchar((num % 10) + '0');
+	str_rev(buffer);
+	fputs(buffer, stdout);
+	count += len;
+
+	return (count);
+
+	return len + 1;
 }
