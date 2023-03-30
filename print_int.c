@@ -31,7 +31,7 @@ int print_int(va_list args)
 	buffer[len] = '\0';
 	str_rev(buffer);
 	fputs(buffer, stdout);
-	count += len;
+	count += len + 1;
 
 	return (count);
 }
