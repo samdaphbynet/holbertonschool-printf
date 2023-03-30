@@ -12,8 +12,8 @@ int main(void)
 {
 	int len, len2;
 
-	len = _printf("%d", 1024);
-	len2 = printf("%d", 1024);
+	len = _printf("There is %d bytes in %d KB\n", 1024, 1);
+	len2 = printf("There is %d bytes in %d KB\n", 1024, 1);
 	fflush(stdout);
 	if (len != len2)
 	{
