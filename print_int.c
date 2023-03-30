@@ -5,29 +5,36 @@
  *
  */
 
-int print(char *str)
+void _recursion_integer(int a)
 {
-	int i;
+        unsigned int t;
 
-	for (i = 2; str[i] != '\0'; ++i)
-		putchar(str[i]);
-
-	return (i);
+        t = a;
+        if (t / 10)
+                _recursion_integer(t / 10);
+        putchar(t % 10 + '0');
 }
-
-/**
- *
- *
- */
 
 int print_int(va_list args)
 {
-	char *p_buff;
-	int size;
+	int count = 1, m = 0;
+	unsigned int n = 0;
 
-	p_buff = itoa(va_arg(args, int), 10);
+	n = va_arg(args, int);
+	m = n;
+	if (m < 0)
+	{
+		putchar('-');
+		m = m * -1;
+		n = m;
+		count += 1;
+	}
+	while (n > 9)
+	{
+		n = n / 10;
+		count++;
+	}
 
-	size = print((p_buff != NULL) ? p_buff : "NULL");
-
-	return (size);
+	_recursion_integer(m);
+	return (count);
 }
