@@ -5,35 +5,29 @@
  *
  */
 
+int print(char *str)
+{
+	int i;
+
+	for (i = 2; str[i] != '\0'; ++i)
+		putchar(str[i]);
+
+	return (i);
+}
+
+/**
+ *
+ *
+ */
+
 int print_int(va_list args)
 {
-	int num = va_arg(args, int);
-	int len = 0, count = 0;
-	char buffer[100];
+	char *p_buff;
+	int size;
 
-	if (num < 0)
-        {
-                putchar('-');
-                num = -num;
-		count++;
-        }
+	p_buff = itoa(va_arg(args, int), 10);
 
-	while (num > 0)
-	{
-		buffer[len] = (num % 10) + '0';
-		num /= 10;
-		len++;
-	}
-	if (len == 0)
-	{
-		buffer[len] = '0';
-		len++;
-	}
+	size = print((p_buff != NULL) ? p_buff : "NULL");
 
-	buffer[len] = '\0';
-	str_rev(buffer);
-	write(1, buffer, strlen(buffer));	
-	count += len;
-
-	return (count);
+	return (size);
 }
