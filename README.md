@@ -34,10 +34,3 @@ Upon successful return, these functions return the number of characters printed 
 
 ## EXAMPLE
 ![nom de l'image](https://samirzidani.000webhostapp.com/readme.png)
-
-#include "main.h"
-_printf("Length:[%d, %i]\n", 50, 40); // Output: Length:[50, 40].
-_printf("Negative:[%d]\n", -762534); // Output: Negative:[-762534].
-_printf("Character:[%c]\n", 'H'); // Output: Character:[H].
-_printf("String:[%s]\n", "I am a string!"); // Output: String:[I am a string!].
-
