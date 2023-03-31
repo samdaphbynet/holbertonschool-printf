@@ -9,7 +9,7 @@
 int print_binary(va_list args)
 {
 	int n = va_arg(args, int);
-	int binary[40];
+	int binary[32];
 	int i = 0, j = 0;
 
 	if (n == 0)
@@ -29,5 +29,5 @@ int print_binary(va_list args)
 		char c = binary[j] + '0';
 		write(1, &c, 1);
 	}
-	return (n);
+	return (i);
 }
