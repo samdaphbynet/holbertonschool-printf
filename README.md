@@ -17,9 +17,9 @@ Each conversion specification begins with the character % and ends with a conver
 
 | Function                        | conversion specifier                | Description                               |
 | :------------------             | :------------------                 | :---------------------------------------- |
-| `print_char`                    | `c`                                 | **print_char**.the print_char function is used to display the character 'A' on the screen by passing the character 'A' as an argument to the function        |
-| `print_int`                     | `d` `i`                             | **print_int**.The int argument is converted to signed decimal notation.  The precision, if any, gives the minimum number of
-              digits  that  must appear; if the converted value requires fewer digits
+| `print_char`                    | `c`                                 | **print_char**.the function is used to display the character        |
+| `print_int`                     | `d` `i`                             | **print_int**.The int argument is converted to signed decimal notation. |
+| `print_pc`                      | `%`                                 | **%**. No argument is converted |
 
 A conversion specifier is a character that indicates the type of conversion to be applied. The meaning of the conversion specifiers are as follows:
 `d`, `i`      The int argument is converted to signed decimal notation.  The precision, if any, gives the minimum number of
