@@ -46,3 +46,4 @@ Upon successful return, these functions return the number of characters printed 
 ## EXAMPLE
 ![example](https://samirzidani.000webhostapp.com/readme.png)
 ![FlowChar](https://samirzidani.000webhostapp.com/timeline.png)
+<img align="right" width="100" height="100" src="(https://samirzidani.000webhostapp.com/timeline.png)">
