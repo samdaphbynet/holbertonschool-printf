@@ -25,6 +25,9 @@ int print_binary(va_list args)
 	}
 
 	for (j = i-1; j >= 0; j--)
-		_printf("%d", binary[j]);
+	{
+		char c = binary[j] + '0';
+		write(1, &c, 1);
+	}
 	return (n);
 }
