@@ -17,12 +17,12 @@ int _write(char c)
 
 void recursive(int n)
 {
-        unsigned int t;
+	unsigned int t;
 
-        t = a;
-        if (t / 10)
-                recursive(t / 10);
-        _write(t % 10 + '0');
+	t = n;
+	if (t / 10)
+		recursive(t / 10);
+	_write(t % 10 + '0');
 }
 
 /**
