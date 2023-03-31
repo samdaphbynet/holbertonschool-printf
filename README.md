@@ -15,6 +15,11 @@ The format string is a character string that starts and ends in its initial shif
 Each conversion specification begins with the character % and ends with a conversion specifier. Between them, there can be zero or more flags, an optional minimum field width, an optional precision, and an optional length modifier, in that order.
 
 ### CONVERSION SPECIFIERS
+
+| Parameter           | Type                | Description                               |
+| :------------------ | :------------------ | :---------------------------------------- |
+| `id`                | `string`            | **Required**. Id of item to fetch         |
+
 A conversion specifier is a character that indicates the type of conversion to be applied. The meaning of the conversion specifiers are as follows:
 `d`, `i`      The int argument is converted to signed decimal notation.  The precision, if any, gives the minimum number of
               digits  that  must appear; if the converted value requires fewer digits, it is padded on the left with zeros.
