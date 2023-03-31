@@ -2,6 +2,7 @@
 
 /**
  * _write - function that works like function write().
+ * @c: the characters to prints
  * Return: function write.
  */
 
@@ -27,6 +28,7 @@ void recursive(int n)
 
 /**
  * print_int - that recursively print each digit of an integer in reverse order
+ * @args: the argument passed in function _printf
  * Return:the count variable which represents the number of characters printed
  */
 
