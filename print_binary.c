@@ -8,26 +8,29 @@
 
 int print_binary(va_list args)
 {
-	int n = va_arg(args, int);
-	int binary[32];
-	int i = 0, j = 0;
+	unsigned int n = va_arg(args, unsigned int);
+	char binary[32];
+	int i = 0, count = 0, j = 0;
 
 	if (n == 0)
 	{
-		write(1, "0", 1);
+		count += write(1, "0", 1);
 		return (-1);
 	}
 
-	for (; n > 0; )
+	else
 	{
-		binary[i++] = n % 2;
-		n /= 2;
+		while (n > 0)
+		{
+			binary[i++] = n % 2 + '0';
+			n /= 2;
+		}
+
+		for (j = i-1; j >= 0; j--)
+		{
+			count += write(1, &binary[j], 1);
+		}
 	}
 
-	for (j = i-1; j >= 0; j--)
-	{
-		char c = binary[j] + '0';
-		write(1, &c, 1);
-	}
-	return (i);
+	return (count);
 }
