@@ -26,8 +26,8 @@ void recursive(int n)
 }
 
 /**
- * print_int - that recursively prints each digit of an integer in reverse order.
- * Return: the count variable which represents the number of characters printed.
+ * print_int - that recursively print each digit of an integer in reverse order
+ * Return:the count variable which represents the number of characters printed
  */
 
 int print_int(va_list args)
