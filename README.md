@@ -1,5 +1,4 @@
 ## Used By
-
 This project is used by the following companies:
 
 - Zidani
@@ -45,4 +44,5 @@ Upon successful return, these functions return the number of characters printed 
        output to strings).
 
 ## EXAMPLE
-![nom de l'image](https://samirzidani.000webhostapp.com/readme.png)
+![example](https://samirzidani.000webhostapp.com/readme.png)
+![FlowChar](https://samirzidani.000webhostapp.com/timeline.png)
