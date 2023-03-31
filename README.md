@@ -1,4 +1,9 @@
-# The project function _printf by Malal and Samir
+## Used By
+
+This project is used by the following companies:
+
+- Zidani
+- Malal
 
 ## Description
 
