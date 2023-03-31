@@ -10,7 +10,7 @@ int print_binary(va_list args)
 {
 	int n = va_arg(args, int);
 	int binary[40];
-	int i = 0;
+	int i = 0, j = 0;
 
 	if (n == 0)
 	{
@@ -24,7 +24,7 @@ int print_binary(va_list args)
 		n /= 2;
 	}
 
-	for (j = 0; i-1; j >= 0; j--)
+	for (j = i-1; j >= 0; j--)
 		_printf("%d", binary[j]);
 	return (n);
 }
