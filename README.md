@@ -8,6 +8,11 @@ This project is used by the following companies:
 
 This project contains a custom implementation of the `printf` function in C, named `_printf`. It allows printing formatted output to the console.
 
+## Compilation
+
+- Your code will be compiled this way:
+- gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+
 ### FORMAT OF THE FORMAT STRING
 The format string is a character string that starts and ends in its initial shift state, if any. It consists of zero or more directives: ordinary characters (not %), which are copied unchanged to the output stream; and conversion specifications, which result in fetching zero or more subsequent arguments.
 
@@ -18,6 +23,7 @@ Each conversion specification begins with the character % and ends with a conver
 | Function                        | conversion specifier                | Description                               |
 | :------------------             | :------------------                 | :---------------------------------------- |
 | `print_char`                    | `c`                                 | **print_char**.the function is used to display the character        |
+| `print_char`                    | `s`                                 | **print_string**.the function is used to display the string        |
 | `print_int`                     | `d` `i`                             | **print_int**.The int argument is converted to signed decimal notation. |
 | `print_pc`                      | `%`                                 | **%**. No argument is converted |
 
