@@ -52,6 +52,6 @@ Upon successful return, these functions return the number of characters printed 
 ## EXAMPLE
 ![example](https://samirzidani.000webhostapp.com/readme.png)
 <p align="center">
-  <img width="700" height="1400" src="https://samirzidani.000webhostapp.com/Diagramme.png">
+  <img width="900" height="1400" src="https://samirzidani.000webhostapp.com/Diagramme.png">
 </p>
 
