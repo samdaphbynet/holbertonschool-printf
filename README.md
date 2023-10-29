@@ -1,5 +1,5 @@
 ## Used By
-This project is used by the following companies:
+This project is used by:
 
 - Zidani
 - Malal
